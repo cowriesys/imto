@@ -62,7 +62,7 @@ KYC documents are uploaded via endpoint https://api.cowrie.exchange/kyc/customer
 POST https://api.cowrie.exchange/kyc/customer
 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5jb3dyaWUuZXhjaGFuZ2UiLCJzdWIiOiJHQ082QlJLRDI2QkRQR0dKVFhNNlhLS0tJVU40M0lES1VOSEI3VkFZREpLUU1VNFJWVUo0SVRMRCIsImlhdCI6MTcxNzA2MTQ2OSwiZXhwIjoxNzE3MTQ3ODY5LCJqdGkiOiI5NTkyNmE1OGQxYWYzMmIxZGNhNzc5NmNmNjI2NWQwODRjNDJjMGQ3Y2FhNDU2MjA3NjIzZmM5MzE3N2Y3NjE4In0.mLrOO8rJ5svHyrc9jI5os2Shvsml-jBQH5mqWgaj5yk
-
+```
 Content-Type: multipart/form-data;boundary="boundary"
 
 --boundary
@@ -81,9 +81,7 @@ CASH
 Content-Disposition: form-data; name="id_number"
 
 B0123456789
-
-        ......
----
+```
 
 ### KYC Upload Response
 HTTP 201 Accepted
