@@ -56,9 +56,11 @@ The token field value is the JWT authentication token that must be included in t
 
 ## Submitting KYC
 KYC handling is based on [Stelar SEP012](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md)
-KYC documents are uploaded via endpoint https://api.cowrie.exchange/kyc/customer
+KYC documents are uploaded via endpoint https://api.cowrie.exchange/kyc/customer which also lists required fields
 
 ### KYC Upload Request
+POST https://api.cowrie.exchange/kyc/customer
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5jb3dyaWUuZXhjaGFuZ2UiLCJzdWIiOiJHQ082QlJLRDI2QkRQR0dKVFhNNlhLS0tJVU40M0lES1VOSEI3VkFZREpLUU1VNFJWVUo0SVRMRCIsImlhdCI6MTcxNzA2MTQ2OSwiZXhwIjoxNzE3MTQ3ODY5LCJqdGkiOiI5NTkyNmE1OGQxYWYzMmIxZGNhNzc5NmNmNjI2NWQwODRjNDJjMGQ3Y2FhNDU2MjA3NjIzZmM5MzE3N2Y3NjE4In0.mLrOO8rJ5svHyrc9jI5os2Shvsml-jBQH5mqWgaj5yk
 
 Content-Type: multipart/form-data;boundary="boundary"
@@ -67,6 +69,21 @@ Content-Type: multipart/form-data;boundary="boundary"
 Content-Disposition: form-data; name="account"
 
 GCO6BRKD26BDPGGJTXM6XKKKIUN43IDKUNHB7VAYDJKQMU4RVUJ4ITLD
+--boundary
+Content-Disposition: form-data; name="first_name"
+
+JENNY
+--boundary
+Content-Disposition: form-data; name="last_name"
+
+CASH
+--boundary
+Content-Disposition: form-data; name="id_number"
+
+B0123456789
+
+        ......
+---
 
 ### KYC Upload Response
 HTTP 201 Accepted
