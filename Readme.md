@@ -137,13 +137,12 @@ HTTP 200 OK
 }
 ```
 The id field in the response uniquely identifies this transaction and can be used to query the transation status.
-The receiver field in the response contains the account_name key whose value is the validated bank account name corresponding tot tthe bank account number
+The receiver field in the response contains the account_name key whose value is the validated bank account name corresponding to the bank account number
 
 ---
 
 ## Sending funds via Stellar
-To complete the funds transfer, make a Stellar payment using these parameters
-stellar 
+To complete the funds transfer, make a Stellar payment using these parameters 
 Parameter|Value
 ---|---
 account|GBQZOJE2GWJU5VBT6NBLD2F3IOVOYUBDAXYUU32XMHDF4RMDOURWV3GT
@@ -151,7 +150,7 @@ memo type|hash
 memo|d3f43208a1d048c6a0da263aa2a223346f9ece0d33304fcd9a4967a008971cca
 asset|NGNT
 asset issuer|GAWODAROMJ33V5YDFY3NPYTHVYQG7MJXVJ2ND3AOGIHYRWINES6ACCPD
-amoun|1000
+amount|1000
 
 
 ## Checking the transaction status
