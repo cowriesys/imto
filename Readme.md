@@ -1,7 +1,7 @@
 # International Money Transfer Operator
 
 ### Cowrie Transfer Services for remittance
-Tihs API enables International Money Transfer Operators to terminate cross border remittance payments to Nigerian mobile-money and bank accounts.
+This API enables International Money Transfer Operators to terminate cross border remittance payments to Nigerian mobile-money and bank accounts.
 
 Here are the steps to perform remittance:
 * Submit KYC for a sender
